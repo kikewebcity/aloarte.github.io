@@ -605,8 +605,6 @@ color: white;
   .product-header img {
 	height: 100%;
 	width: 100%;
-	 opacity:1;
-	  transition: all 500ms ease-in-out;
   }
   .product-footer {
 	padding: 5px auto;
@@ -641,8 +639,7 @@ color: white;
 	border-radius: 50%;
 	padding: 1rem 1rem;
 	line-height: 1rem;
-	cursor: pointer; 
-		
+	cursor: pointer; 		
   }
 .product-header:hover img  {
 opacity:0;	
@@ -661,8 +658,15 @@ opacity:0;
 	display: block;
 	margin-bottom: 1rem;
   }
+.horno-chico-p {
+opacity:1;	
+}
 
-.horno-chico { 
+.horno-chico-p:hover {
+opacity:0;	
+}
+
+.horno-chico-m { 
 position:absolute;
 left:0;
 top:0;
@@ -670,7 +674,7 @@ opacity:0;
 transition: all 0.7s ease; 	
 }
 
-.horno-chico:hover { 
+.horno-chico-m:hover { 
 opacity:1;	
 }
   
