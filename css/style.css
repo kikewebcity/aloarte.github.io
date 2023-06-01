@@ -644,7 +644,7 @@ color: white;
 	cursor: pointer; 
 		
   }
-.product-header img:hover  {
+.product-header:hover img  {
 opacity:0;	
   } 
 
