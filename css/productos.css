@@ -1,0 +1,409 @@
+/* ==================== PORTADA DE CATEGORÍA ==================== */
+.category-hero {
+  background: var(--theme-gradient, linear-gradient(135deg, #00b4cc 0%, #397bac 100%));
+  color: #fff;
+  padding: clamp(2.5rem, 5vw, 4rem) 1.5rem;
+}
+
+.category-hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: center;
+  gap: 2rem;
+}
+
+.category-badge {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.25);
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.category-hero h1 {
+  font-size: clamp(2.2rem, 4.5vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+.category-hero p {
+  font-size: 1.1rem;
+  opacity: 0.95;
+  max-width: 540px;
+  margin-bottom: 1.75rem;
+}
+
+.category-hero-img {
+  max-height: 320px;
+  width: auto;
+  margin: 0 auto;
+  filter: drop-shadow(0 14px 24px rgba(0, 0, 0, 0.25));
+}
+
+/* Submenú moderno en píldoras */
+.quick-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.quick-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: rgba(255, 255, 255, 0.95);
+  color: #111;
+  padding: 0.6rem 1.15rem;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.quick-pill img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.quick-pill:hover {
+  transform: translateY(-3px);
+  background: #000;
+  color: #fff;
+}
+
+/* ==================== CATÁLOGO Y TARJETAS ==================== */
+.catalog-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: clamp(2.5rem, 5vw, 4rem) 1.5rem;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.section-heading h2 {
+  font-size: clamp(1.7rem, 3vw, 2.3rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.section-heading p {
+  color: #555;
+  margin-top: 0.35rem;
+}
+
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.75rem;
+}
+
+.item-card {
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.item-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.12);
+}
+
+/* Contenedor de imagen proporcionado (sin deformar ni cortar) */
+.item-media {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  background: #f6f7f9;
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.item-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.35s ease;
+}
+
+.item-card:hover .item-media img {
+  transform: scale(1.06);
+}
+
+.item-info {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.item-info h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 0.4rem;
+}
+
+.item-meta {
+  font-size: 0.88rem;
+  color: #666;
+  margin-bottom: 1.1rem;
+}
+
+.item-actions {
+  margin-top: auto;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn-detail,
+.btn-quote {
+  flex: 1;
+  padding: 0.65rem 0.9rem;
+  border-radius: 0.6rem;
+  font-family: inherit;
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  transition: opacity 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-detail {
+  background: #111;
+  color: #fff;
+}
+
+.btn-detail:hover {
+  background: #333;
+}
+
+.btn-quote {
+  background: #e8fdf0;
+  color: #0b8a36;
+  border: 1px solid #b8f2cd;
+}
+
+.btn-quote:hover {
+  background: #0df053;
+  color: #fff;
+}
+
+/* ==================== VIDEO CURSOS Y ENVÍOS ==================== */
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  aspect-ratio: 16 / 9;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.shipping-banner {
+  background: #f3f1f1;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.shipping-banner h2 {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 700;
+  max-width: 750px;
+  margin: 0 auto 1.5rem;
+}
+
+.shipping-banner img {
+  max-width: 850px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 1rem;
+}
+
+/* ==================== MODAL DE FICHA TÉCNICA (HORNOS) ==================== */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.72);
+  backdrop-filter: blur(4px);
+  z-index: 2000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.modal-backdrop.is-visible {
+  display: flex;
+}
+
+.modal-card {
+  background: #fff;
+  border-radius: 1.25rem;
+  max-width: 880px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: none;
+  background: #f0f0f0;
+  font-size: 1.4rem;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.modal-gallery-main {
+  background: #f6f7f9;
+  border-radius: 0.85rem;
+  aspect-ratio: 1 / 1;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-gallery-main img {
+  max-height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+.modal-thumbs {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 0.75rem;
+  justify-content: center;
+}
+
+.modal-thumbs img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  background: #f6f7f9;
+  padding: 0.35rem;
+  border-radius: 0.5rem;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.modal-thumbs img.active {
+  border-color: #008B91;
+}
+
+.modal-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal-details h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.modal-specs {
+  display: inline-block;
+  background: #eef7f7;
+  color: #006c70;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.modal-details p {
+  color: #333;
+  line-height: 1.65;
+  margin-bottom: 1.75rem;
+}
+
+.modal-wsp-btn {
+  background: #0df053;
+  color: #fff;
+  text-align: center;
+  padding: 0.9rem 1.5rem;
+  border-radius: 0.75rem;
+  font-weight: 700;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: background-color 0.2s ease;
+}
+
+.modal-wsp-btn:hover {
+  background: #0bc744;
+}
+
+@media (max-width: 768px) {
+  .category-hero-inner,
+  .modal-card {
+    grid-template-columns: 1fr;
+  }
+
+  .category-hero {
+    text-align: center;
+  }
+
+  .category-hero p {
+    margin-inline: auto;
+  }
+
+  .quick-nav {
+    justify-content: center;
+  }
+
+  .category-hero-img {
+    max-height: 220px;
+  }
+}
