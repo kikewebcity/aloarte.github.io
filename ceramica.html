@@ -1,410 +1,365 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Una tienda de equipos, herramientas, insumos, servicios de instalación y cursos para los artistas, artesanos del vidrio, la cerámica y la joyería">
-  <meta name="keywords" content="hornos,cerámica,vidrio,artistas,joyería,insumos ">
-  <meta name="robots" content="index">
-  <!-- links -->
-  <script src="https://kit.fontawesome.com/aee45fbc39.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
-   <link rel="icon" href="./IMG/logo_iconos/logomini.png" >
-   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cerámica | Hornos, Herramientas e Insumos - ALO Artistas a la Obra</title>
+  <meta name="description" content="Hornos para cerámica, tornos, estiques, placas, esmaltes y cursos en CDMX. Cotizaciones sin costo y envíos a toda la república.">
+
+  <link rel="icon" href="./IMG/logo_iconos/logomini.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;600&display=swap" rel="stylesheet"> 
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/style.css" />
-  <title>Productos de Cerámica</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/aee45fbc39.js" crossorigin="anonymous" defer></script>
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/productos.css">
 </head>
-<body>
-    <!-- icon whatsshap -->
-  
-    <!--Navigation -->
-    <nav class="navbar  sticky-top navbar-expand-lg navbar-dark" style="background-color: #000;">
-      <a class="logo" href="#sec1">
-        <img src="./IMG/logo_iconos/logomini.png" width="200" height="90"   alt="logo">
+<body style="--theme-gradient: linear-gradient(135deg, #2ccfd2 0%, #397bac 100%);">
+
+  <!-- Navegación unificada -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navegación principal">
+      <a class="logo" href="./index.html">
+        <img src="./IMG/logo_iconos/logomini.png" width="180" height="81" alt="Logo ALO Artistas a la Obra">
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menú">
+        <span class="hamburger"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-           <li class="nav-item ">
-            <a class="nav-link" href="./index.html">Inicio <span class="sr-only">(current)</span></a>
-            <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Productos
-            </a>
-          <div class="dropdown-menu  aria-labelledby="navbarDropdown   style="background: #000"     >
-      <a class="dropdown-item "    href="./vidrio.html">Vidrio</a> 
-              <a class="dropdown-item"        href="#">Cerámica</a>
-              <a class="dropdown-item "    href="./joyeria.html">Joyería</a>
-              <a class="dropdown-item "   href="#">Metales</a>
-              <a class="dropdown-item "  href="#">Manualidades</a>
-            </div>
-          </li>
-        </li>
-    </li>
-    <li class="nav-item dropdown" >
-      <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Servicios
-      </a>
-    <div class="dropdown-menu  aria-labelledby="navbarDropdown   style="background: #000"     >
-<a class="dropdown-item "    href="#">Instalaciones</a>
-        <a class="dropdown-item"     href="#">Servicio Técnico</a>
-        <a class="dropdown-item "    href="#">Asesorías</a>
-        <a class="dropdown-item "    href="#cursos">Cursos</a>
+
+      <div class="nav-collapse" id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./vidrio.html">Vidrio</a></li>
+          <li><a href="./ceramica.html" style="text-decoration: underline;">Cerámica</a></li>
+          <li><a href="./joyeria.html">Joyería</a></li>
+          <li><a href="./index.html#contacto">Contacto</a></li>
+        </ul>
+
+        <ul class="socials" aria-label="Redes sociales">
+          <li><a href="https://www.facebook.com/ALOhornosyherramientas/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://www.instagram.com/hornosdealtatemperatura_mexico/?hl=en" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="https://www.youtube.com/channel/UCgwtT3KqP0mqrLiSvh7e_Tw" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa fa-youtube"></i></a></li>
+        </ul>
       </div>
-    </li>
-  </li>
-</li>
-          <li class="nav-item">
-            <a class="nav-link" href="./index.html#sec3">Contacto </a>
-          </li>
-          <div class="footer-content">
-            <ul class="socials">
-                <li><a href="https://www.facebook.com/ALOhornosyherramientas/"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="https://www.instagram.com/hornosdealtatemperatura_mexico/?hl=en"><i class="fa fa-instagram" ></i></a></li>
-                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-            </ul>
-        </div>
-      </div>
-    </nav>  
-    <!-- Portada de cerámica -->
-    <header id="home" class="header2">
-    <img src="./IMG/portadas/ceramicaportada.png" alt="" class="hero-img" />
-     <!-- Submenu -->
-    <div class="advert-center">
-            <div class="advert-box">  <a href="#sec1">    
-              <div class="dotted">  
-                <div class="content">
-                  <h1><strong>
-                    EQUIPO
-                  </strong> </h1>
-                </div>
-              </a> 
-              </div>
-              <a href="#sec1"> <img  src="./IMG/logo_iconos/ceramica_hornos.png" alt="botonhornos">
-            </a>
-            </div>
-            <div class="advert-box"><a href="#sec2">
-              <div class="dotted">
-                <div class="content">
-                  <h1><strong>
-                    HERRAMIENTAS
-                  </h1></strong>
-                </div>
-              </div>
-              <img class="iconos-portada" src="./IMG/logo_iconos/ceramica_herramientas.png" alt="herramientas">
-            </a>
-            </div>
-            <div class="advert-box"> <a href="#sec3">
-              <div class="dotted">
-                <div class="content">
-                  <h1><strong>
-                    INSUMOS
-                  </h1></strong>
-                </div>
-              </div>
-              <img   class="iconos-portada" src="./IMG/logo_iconos/ceramica _esmaltes.png" alt="Esmaltes">
-            </a>
-            </div>
-            <div class="advert-box"> <a href="#cursos">
-              <div class="dotted">
-                <div class="content">
-                  <h1><strong>
-                     CURSOS  </strong> </h1>
-                </div>
-              </div>
-              <img   class="iconos-portada" src="./IMG/logo_iconos/ceramica_cursos.png" alt="Cursos">
-            </a>
-            </div>
-          </div>
-    </div>
+    </nav>
   </header>
-  <!-- lista de hornos de cerámica -->
-   <section id="sec1" class="section featured">
-    <div class="title">
-      <h1>EQUIPOS</h1>
-    </div>
-    <div class="product-center container">
-	
-      <div class="product">
-	       <a href="./hornos-ceramica.html#chico_c">    
-        <div class="product-header">
-          <img class="horno-chico_p" src="./IMG/productos_ceramica/hornos/chico/4065.png" alt=" horno chico para cerámica"> 
-        <img  class="horno-chico_m" src="./IMG/productos_ceramica/hornos/chico/3960ladrillo.png"  alt="img previa" >
-        </div>
-        <div class="product-footer">    
-            <h3> <strong> chico </strong> </h3>
-        </div>  </a>
-      </div>
-      <div class="product">
-	        <a href="./hornos-ceramica.html#hilos">
-        <div class="product-header">
-          <img src="./IMG/productos_vidrio/hornos/hilos/P1010832.png" alt=" horno para hacer hilos de vidrio">
-        </div>
-        <div class="product-footer">
-        <h3> <strong>para hilos de vidrio</strong></h3>
-        </div> </a>
-      </div>
-      <div class="product">
-	   <a href="./hornos-ceramica.html#master_c">
-        <div class="product-header"> 
-          <img src="./IMG/productos_ceramica/hornos/master2/front.png" alt="horno nivel master tipo 2 para cerámica">
-        </div>
-        <div class="product-footer">
-        <h3><strong> nivel master 2 </strong></h3>
-        </div></a>
-      </div>
-      <div class="product">
-	       <a href="./hornos-ceramica.html#master1">
-        <div class="product-header">
-          <img src="./IMG/productos_ceramica/hornos/master1/LA.png" alt="Hornos-8595">
-        </div>
-        <div class="product-footer">
-            <h3> <strong> nivel master 1 </strong> </h3>
-        </div> </a>
-      </div>
-      <div class="product">
-	           <a href="./hornos-ceramica.html#mediano_c">
-        <div class="product-header">
-          <img src="./IMG/productos_ceramica/hornos/mediano/P1010818.png" alt="horno mediano para cerámica"> 
-        </div>
-        <div class="product-footer">
-            <h3> <strong>mediano  </strong> </h3>
-        </div>  </a> 
-      </div> 
-      <div class="product">
-	        <a href="./hornos-ceramica.html#heavy_c">
-        <div class="product-header">
-          <img src="./IMG/productos_ceramica/hornos/heavy/horno1metro2.png" alt="horno nivel heavy para cerámica">
-        </div>
-        <div class="product-footer">
-        <h3><strong> nivel heavy </strong></h3>
-        </div></a>
-      </div>
-    </div>
-  </section>
 
+  <main>
+    <!-- Portada moderna -->
+    <section class="category-hero">
+      <div class="category-hero-inner">
+        <div>
+          <span class="category-badge">Catálogo Especializado</span>
+          <h1>Taller de Cerámica</h1>
+          <p>Hornos de alta y baja temperatura, tornos, herramientas de modelado, esmaltes y capacitación técnica para tu estudio.</p>
 
-    <section id="sec2" class="section featured">
-      <div class="title">
-        <h1 id="Herramientas_vidrio"> Herramientas </h1>
-      </div>
-
-      <div class="product-center container">
-        <div class="product">
-          <div class="product-header">
-            <img src="./IMG/productos_ceramica/Herramientas/torno.png" alt="pinzas">
-          </div>
-          <div class="product-footer">
-          <h3><strong>torno</h3></strong>
-          </div>
-        </div>
-        <div class="product">
-          <div class="product-header">
-            <img src="./IMG/productos_ceramica/Herramientas/esponja.jpg" alt="Set de corte">
-
-          </div>
-          <div class="product-footer">
-           <h3><strong>esponja </h3></strong>
-            
-          </div>
-        </div>
-        <div class="product">
-          <div class="product-header">
-            <img src="./IMG/productos_ceramica/Herramientas/estiques.jpg" alt="estiques">
-          </div>
-          <div class="product-footer">
-           <h3><strong>estiques</h3></strong>
-            
-          </div>
-        </div>
-        <div class="product">
-          <div class="product-header">
-            <img src="./IMG/productos_ceramica/Herramientas/botella.jpg" alt="botell">
-          </div>
-          <div class="product-footer">
-            <h3><strong>boquillas</h3></strong>
-          
-          </div>
-        </div>
-       
-        <div class="product">
-          <div class="product-header">
-            <img src="./IMG/productos_ceramica/Herramientas/placa.png" alt="canuela_de_zinc">
-         
-          </div>
-          <div class="product-footer">
-           <h3><strong>placa tipo 1</h3></strong>
-          
-          </div>
-        </div>
-        <div class="product">
-          <div class="product-header">
-            <img src= "./IMG/productos_ceramica/Herramientas/placa2.png" alt="cintadecobre">
-
-          </div>
-          <div class="product-footer">
-           <h3><strong>placa tipo 2</h3></strong>
-          
-          </div>
-        </div>
-        <div class="product">
-          <div class="product-header">
-            <img src="./IMG/productos_ceramica/Herramientas/placa3.png" alt="vidriodicroico">
-          </div>
-          <div class="product-footer">
-         <h3><strong>placa tipo 3</strong></h3>
-      
-          </div>
-        </div>
-        <div class="product">
-          <div class="product-header">
-            <img src="./IMG/productos_ceramica/Herramientas/compas_plastico.png" alt="vidriodicroico">
-          </div>
-          <div class="product-footer">
-          <h3><strong>compas de plástico</strong></h3>
-      
-          </div>
-        </div>
-        <div class="product">
-          <div class="product-header">
-            <img src="./IMG/productos_ceramica/Herramientas/compas_metal.png" alt="vidriodicroico">
-
-          </div>
-          <div class="product-footer">
-           <h3><strong>compas de metal</strong></h3>
-      
-          </div>
+          <nav class="quick-nav" aria-label="Secciones de cerámica">
+            <a href="#equipos" class="quick-pill">
+              <img src="./IMG/logo_iconos/ceramica_hornos.png" alt=""> Equipos
+            </a>
+            <a href="#herramientas" class="quick-pill">
+              <img src="./IMG/logo_iconos/ceramica_herramientas.png" alt=""> Herramientas
+            </a>
+            <a href="#insumos" class="quick-pill">
+              <img src="./IMG/logo_iconos/ceramica _esmaltes.png" alt=""> Insumos
+            </a>
+            <a href="#cursos" class="quick-pill">
+              <img src="./IMG/logo_iconos/ceramica_cursos.png" alt=""> Cursos
+            </a>
+          </nav>
         </div>
 
-      </div>
-    </section>
-
-    <section id="sec3" class="section featured">
-      <div class="title">
-        <h1 id="Esmaltes_vidrio">Insumos</h1>
-      </div>
-      <div class="product-center container">
-        <div class="product">
-          <div class="product-header">
-            <img src="./IMG/productos_ceramica/esmalte/esmalte(amarillo).png" alt="esmate amarillo para cerámica">
-          </div>
-          <div class="product-footer">
-          <h3><strong>amarillo</strong></h3>
-            
-          </div>
-        </div>
-        <div class="product">
-          <div class="product-header">
-            <img src="./IMG/productos_ceramica/esmalte/esmalte(azulobscuro).png" alt="esmalte azul  para cerámica">
-
-            <ul class="icons">
-              
-               
-            </ul>
-          </div>
-          <div class="product-footer">
-            <h3><strong>azul</h3></strong>
-           
-          </div>
-        </div>
-        <div class="product">
-          <div class="product-header">
-            <img src="./IMG/productos_ceramica/esmalte/esmalte(naranja).png" alt="esmalte naranja para cerámica">
-
-            <ul class="icons">
-             
-               
-            </ul>
-          </div>
-          <div class="product-footer">
-           <h3><strong>naranja</h3></strong>
-            
-          </div>
-        </div>
-        <div class="product">
-          <div class="product-header">
-            <img src="./IMG/productos_ceramica/esmalte/esmalte(verdeobscuro2).png" alt="esmalte verde para cerámica">
-
-            <ul class="icons">
-          
-               
-            </ul>
-          </div>
-          <div class="product-footer">
-         <h3><strong>verde</h3></strong>
-            
-          </div>
-        </div>
-        <div class="product">
-          <div class="product-header">
-            <img src="./IMG/productos_ceramica/esmalte/esmalte2.png" alt="esmalte rojo para cerámica">
-
-          </div>
-          <div class="product-footer">
-           <h3><strong>Rojo</h3></strong>
-           
-          </div>
-        </div>
-        <div class="product">
-          <div class="product-header">
-            <img src="./IMG/productos_ceramica/esmalte/esmalteazul.png" alt="esmalte azul para cerámica">
-          </div>
-          <div class="product-footer">
-            <h3><strong>azul</h3></strong>
-          
+        <div>
+          <img src="./IMG/portadas/ceramicaportada.png" alt="Equipos y cerámica ALO" class="category-hero-img">
         </div>
       </div>
     </section>
 
-    <div class="title">
-      <h1 id="cursos">CURSOS</h1>
-    </div>
-    <div class="embed-responsive embed-responsive-21by9">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/xUtwof2kBqE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-   <!-- Envios -->
-   <section class="section">
-    <div class="derecha">
-      <h2><strong> DONDE QUIERA QUE ESTES, NOSOTROS TE LO LLEVAMOS.</strong></h2>
-    <div class="product-banner">
-        <img src="./IMG/portadas/enviosceramica.png" alt="Enviamos a toda la república" />
+    <!-- 1. EQUIPOS (Abren modal con galería y medidas) -->
+    <section id="equipos" class="catalog-section">
+      <div class="section-heading">
+        <h2>Equipos y Hornos</h2>
+        <p>Selecciona un modelo para ver sus vistas, medidas internas y cotizar a medida</p>
       </div>
-      </div>
-  </section>
 
-		<!-- footer -->
-    <footer>
-      <div class="footer-content">
-          <h2>ALO</h2>
-          <p>ALO o Artistas a La Obra, mas que una marca pretendemos ser una comunidad para aquellos alquimistas que transforman el arte en materia, buscamos brindar a los artistas de diversos oficios, los elementos necesarios que los ayuden a contruir sus espacios y obras. </p>
-          <ul class="socials">
-              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-instagram" ></i></a></li>
-              <li><a href="#"><i class="fa fa-twitch"></i></a></li>
-              <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-          </ul>
+      <div class="catalog-grid">
+        <article class="item-card">
+          <div class="item-media">
+            <img src="./IMG/productos_ceramica/hornos/chico/4065.png" alt="Horno chico para cerámica" loading="lazy">
+          </div>
+          <div class="item-info">
+            <h3>Horno Chico</h3>
+            <p class="item-meta">Compacto &bull; 20 × 20 × 25 cm</p>
+            <div class="item-actions">
+              <button type="button" class="btn-detail" data-modal-horno="chico_c">Ver ficha</button>
+              <a href="#" class="btn-quote" data-wsp-producto="Horno Chico para Cerámica"><i class="fa fa-whatsapp"></i> Cotizar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="item-card">
+          <div class="item-media">
+            <img src="./IMG/productos_vidrio/hornos/hilos/P1010832.png" alt="Horno para hilos de vidrio" loading="lazy">
+          </div>
+          <div class="item-info">
+            <h3>Para Hilos de Vidrio</h3>
+            <p class="item-meta">Apertura frontal especializada</p>
+            <div class="item-actions">
+              <button type="button" class="btn-detail" data-modal-horno="hilos">Ver ficha</button>
+              <a href="#" class="btn-quote" data-wsp-producto="Horno para Hilos de Vidrio"><i class="fa fa-whatsapp"></i> Cotizar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="item-card">
+          <div class="item-media">
+            <img src="./IMG/productos_ceramica/hornos/master2/front.png" alt="Horno nivel master 2 para cerámica" loading="lazy">
+          </div>
+          <div class="item-info">
+            <h3>Nivel Master 2</h3>
+            <p class="item-meta">Producción continua</p>
+            <div class="item-actions">
+              <button type="button" class="btn-detail" data-modal-horno="master2">Ver ficha</button>
+              <a href="#" class="btn-quote" data-wsp-producto="Horno Nivel Master 2 (Cerámica)"><i class="fa fa-whatsapp"></i> Cotizar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="item-card">
+          <div class="item-media">
+            <img src="./IMG/productos_ceramica/hornos/master1/LA.png" alt="Horno nivel master 1 para cerámica" loading="lazy">
+          </div>
+          <div class="item-info">
+            <h3>Nivel Master 1</h3>
+            <p class="item-meta">Modelo ALO-9090</p>
+            <div class="item-actions">
+              <button type="button" class="btn-detail" data-modal-horno="master1">Ver ficha</button>
+              <a href="#" class="btn-quote" data-wsp-producto="Horno Nivel Master 1 (Cerámica)"><i class="fa fa-whatsapp"></i> Cotizar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="item-card">
+          <div class="item-media">
+            <img src="./IMG/productos_ceramica/hornos/mediano/P1010818.png" alt="Horno mediano para cerámica" loading="lazy">
+          </div>
+          <div class="item-info">
+            <h3>Horno Mediano</h3>
+            <p class="item-meta">Capacidad versátil de taller</p>
+            <div class="item-actions">
+              <button type="button" class="btn-detail" data-modal-horno="mediano_c">Ver ficha</button>
+              <a href="#" class="btn-quote" data-wsp-producto="Horno Mediano para Cerámica"><i class="fa fa-whatsapp"></i> Cotizar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="item-card">
+          <div class="item-media">
+            <img src="./IMG/productos_ceramica/hornos/heavy/horno1metro2.png" alt="Horno nivel heavy para cerámica" loading="lazy">
+          </div>
+          <div class="item-info">
+            <h3>Nivel Heavy</h3>
+            <p class="item-meta">Gran formato industrial</p>
+            <div class="item-actions">
+              <button type="button" class="btn-detail" data-modal-horno="heavy_c">Ver ficha</button>
+              <a href="#" class="btn-quote" data-wsp-producto="Horno Nivel Heavy para Cerámica"><i class="fa fa-whatsapp"></i> Cotizar</a>
+            </div>
+          </div>
+        </article>
       </div>
-      <div class="footer-bottom">
-          <p>copyright &copy; <a href="#">Artistas A La Obra </br>Web diseñada por Next Stage </a>  </p>
-                 
+    </section>
+
+    <!-- 2. HERRAMIENTAS -->
+    <section id="herramientas" class="catalog-section">
+      <div class="section-heading">
+        <h2>Herramientas</h2>
       </div>
+
+      <div class="catalog-grid">
+        <article class="item-card">
+          <div class="item-media"><img src="./IMG/productos_ceramica/Herramientas/torno.png" alt="Torno alfarero" loading="lazy"></div>
+          <div class="item-info">
+            <h3>Torno</h3>
+            <div class="item-actions"><a href="#" class="btn-quote" data-wsp-producto="Torno para cerámica"><i class="fa fa-whatsapp"></i> Cotizar</a></div>
+          </div>
+        </article>
+
+        <article class="item-card">
+          <div class="item-media"><img src="./IMG/productos_ceramica/Herramientas/esponja.jpg" alt="Esponja para cerámica" loading="lazy"></div>
+          <div class="item-info">
+            <h3>Esponja</h3>
+            <div class="item-actions"><a href="#" class="btn-quote" data-wsp-producto="Esponja para cerámica"><i class="fa fa-whatsapp"></i> Cotizar</a></div>
+          </div>
+        </article>
+
+        <article class="item-card">
+          <div class="item-media"><img src="./IMG/productos_ceramica/Herramientas/estiques.jpg" alt="Estiques de modelado" loading="lazy"></div>
+          <div class="item-info">
+            <h3>Estiques</h3>
+            <div class="item-actions"><a href="#" class="btn-quote" data-wsp-producto="Set de estiques para cerámica"><i class="fa fa-whatsapp"></i> Cotizar</a></div>
+          </div>
+        </article>
+
+        <article class="item-card">
+          <div class="item-media"><img src="./IMG/productos_ceramica/Herramientas/botella.jpg" alt="Boquillas aplicadoras" loading="lazy"></div>
+          <div class="item-info">
+            <h3>Boquillas</h3>
+            <div class="item-actions"><a href="#" class="btn-quote" data-wsp-producto="Boquillas aplicadoras para cerámica"><i class="fa fa-whatsapp"></i> Cotizar</a></div>
+          </div>
+        </article>
+
+        <article class="item-card">
+          <div class="item-media"><img src="./IMG/productos_ceramica/Herramientas/placa.png" alt="Placa refractaria tipo 1" loading="lazy"></div>
+          <div class="item-info">
+            <h3>Placa Tipo 1</h3>
+            <div class="item-actions"><a href="#" class="btn-quote" data-wsp-producto="Placa refractaria Tipo 1"><i class="fa fa-whatsapp"></i> Cotizar</a></div>
+          </div>
+        </article>
+
+        <article class="item-card">
+          <div class="item-media"><img src="./IMG/productos_ceramica/Herramientas/placa2.png" alt="Placa refractaria tipo 2" loading="lazy"></div>
+          <div class="item-info">
+            <h3>Placa Tipo 2</h3>
+            <div class="item-actions"><a href="#" class="btn-quote" data-wsp-producto="Placa refractaria Tipo 2"><i class="fa fa-whatsapp"></i> Cotizar</a></div>
+          </div>
+        </article>
+
+        <article class="item-card">
+          <div class="item-media"><img src="./IMG/productos_ceramica/Herramientas/placa3.png" alt="Placa refractaria tipo 3" loading="lazy"></div>
+          <div class="item-info">
+            <h3>Placa Tipo 3</h3>
+            <div class="item-actions"><a href="#" class="btn-quote" data-wsp-producto="Placa refractaria Tipo 3"><i class="fa fa-whatsapp"></i> Cotizar</a></div>
+          </div>
+        </article>
+
+        <article class="item-card">
+          <div class="item-media"><img src="./IMG/productos_ceramica/Herramientas/compas_plastico.png" alt="Compás de plástico" loading="lazy"></div>
+          <div class="item-info">
+            <h3>Compás de Plástico</h3>
+            <div class="item-actions"><a href="#" class="btn-quote" data-wsp-producto="Compás de plástico para cerámica"><i class="fa fa-whatsapp"></i> Cotizar</a></div>
+          </div>
+        </article>
+
+        <article class="item-card">
+          <div class="item-media"><img src="./IMG/productos_ceramica/Herramientas/compas_metal.png" alt="Compás de metal" loading="lazy"></div>
+          <div class="item-info">
+            <h3>Compás de Metal</h3>
+            <div class="item-actions"><a href="#" class="btn-quote" data-wsp-producto="Compás de metal para cerámica"><i class="fa fa-whatsapp"></i> Cotizar</a></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 3. INSUMOS (ESMALTES) -->
+    <section id="insumos" class="catalog-section">
+      <div class="section-heading">
+        <h2>Insumos y Esmaltes</h2>
+      </div>
+
+      <div class="catalog-grid">
+        <article class="item-card">
+          <div class="item-media"><img src="./IMG/productos_ceramica/esmalte/esmalte(amarillo).png" alt="Esmalte amarillo" loading="lazy"></div>
+          <div class="item-info">
+            <h3>Esmalte Amarillo</h3>
+            <div class="item-actions"><a href="#" class="btn-quote" data-wsp-producto="Esmalte Amarillo para cerámica"><i class="fa fa-whatsapp"></i> Cotizar</a></div>
+          </div>
+        </article>
+
+        <article class="item-card">
+          <div class="item-media"><img src="./IMG/productos_ceramica/esmalte/esmalte(azulobscuro).png" alt="Esmalte azul obscuro" loading="lazy"></div>
+          <div class="item-info">
+            <h3>Esmalte Azul Obscuro</h3>
+            <div class="item-actions"><a href="#" class="btn-quote" data-wsp-producto="Esmalte Azul Obscuro para cerámica"><i class="fa fa-whatsapp"></i> Cotizar</a></div>
+          </div>
+        </article>
+
+        <article class="item-card">
+          <div class="item-media"><img src="./IMG/productos_ceramica/esmalte/esmalte(naranja).png" alt="Esmalte naranja" loading="lazy"></div>
+          <div class="item-info">
+            <h3>Esmalte Naranja</h3>
+            <div class="item-actions"><a href="#" class="btn-quote" data-wsp-producto="Esmalte Naranja para cerámica"><i class="fa fa-whatsapp"></i> Cotizar</a></div>
+          </div>
+        </article>
+
+        <article class="item-card">
+          <div class="item-media"><img src="./IMG/productos_ceramica/esmalte/esmalte(verdeobscuro2).png" alt="Esmalte verde" loading="lazy"></div>
+          <div class="item-info">
+            <h3>Esmalte Verde</h3>
+            <div class="item-actions"><a href="#" class="btn-quote" data-wsp-producto="Esmalte Verde para cerámica"><i class="fa fa-whatsapp"></i> Cotizar</a></div>
+          </div>
+        </article>
+
+        <article class="item-card">
+          <div class="item-media"><img src="./IMG/productos_ceramica/esmalte/esmalte2.png" alt="Esmalte rojo" loading="lazy"></div>
+          <div class="item-info">
+            <h3>Esmalte Rojo</h3>
+            <div class="item-actions"><a href="#" class="btn-quote" data-wsp-producto="Esmalte Rojo para cerámica"><i class="fa fa-whatsapp"></i> Cotizar</a></div>
+          </div>
+        </article>
+
+        <article class="item-card">
+          <div class="item-media"><img src="./IMG/productos_ceramica/esmalte/esmalteazul.png" alt="Esmalte azul claro" loading="lazy"></div>
+          <div class="item-info">
+            <h3>Esmalte Azul</h3>
+            <div class="item-actions"><a href="#" class="btn-quote" data-wsp-producto="Esmalte Azul para cerámica"><i class="fa fa-whatsapp"></i> Cotizar</a></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 4. CURSOS -->
+    <section id="cursos" class="catalog-section">
+      <div class="section-heading">
+        <h2>Cursos y Talleres</h2>
+      </div>
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/xUtwof2kBqE" title="Cursos de cerámica ALO" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <!-- Envios -->
+    <section class="shipping-banner">
+      <h2>Donde quiera que estés, nosotros te lo llevamos.</h2>
+      <img src="./IMG/portadas/enviosceramica.png" alt="Enviamos equipos e insumos de cerámica a toda la república" loading="lazy">
+    </section>
+  </main>
+
+  <!-- Modal de Ficha Técnica -->
+  <div id="product-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-card">
+      <button type="button" id="modal-close" class="modal-close" aria-label="Cerrar ficha">&times;</button>
+
+      <div>
+        <div class="modal-gallery-main">
+          <img id="modal-main-img" src="" alt="">
+        </div>
+        <div id="modal-thumbs" class="modal-thumbs"></div>
+      </div>
+
+      <div class="modal-details">
+        <h2 id="modal-title"></h2>
+        <span id="modal-specs" class="modal-specs"></span>
+        <p id="modal-desc"></p>
+        <a id="modal-wsp" href="#" class="modal-wsp-btn" target="_blank" rel="noopener">
+          <i class="fa fa-whatsapp"></i> Cotizar este equipo por WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Botón flotante WhatsApp -->
+  <a href="https://wa.me/525613530308" class="boton-wsp" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <i class="fa fa-whatsapp"></i>
+  </a>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>ALO Artistas a La Obra &bull; Comunidad y equipamiento para artistas del fuego</p>
+    <p>Copyright &copy; Artistas A La Obra</p>
   </footer>
-  <!-- End Footer -->
 
-  <!-- GSAP -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script> 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-  <!-- Custom Script -->
-  <script src="./js/index.js"></script>
+  <script src="./js/catalogo.js"></script>
 </body>
-
 </html>
